@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing</title>
+    <link rel="webpage icon" href="images/icon.png" type="icon" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Ultimate Number Guessing Game! 🎯</h1>
+    <div class="container">
+      <div class="image">
+        <img src="images/front.JPG" alt="Guess the number" />
+      </div>
+      <div class="rules">
+        <p id="title"><b>Can You Guess the Right Number?</b></p>
+        <p>
+          Put your guessing skills to the test in this fun and challenging
+          number guessing game! The objective is simple: guess the hidden number
+          correctly within a limited number of attempts.
+        </p>
+        <hr />
+        <p id="title"><b>How to Play:</b></p>
+        <ol>
+          <li><b>Make Your Guess:</b> Enter a number and submit your guess.</li>
+          <li>
+            <b>Get Feedback:</b> The game will tell you if your guess is too
+            high, too low, or just right!
+          </li>
+          <li>
+            <b>Adjust Your Guesses:</b> Use the feedback to narrow down the
+            possibilities and guess again.
+          </li>
+          <li>
+            <b>Win or Lose:</b> Guess the number before you run out of attempts
+            to win. If you use all your attempts, the game will reveal the
+            hidden number.
+          </li>
+        </ol>
+        <hr />
+        <p id="title"><b>Game Tips:</b></p>
+        <ul>
+          <li>
+            <b>Start with the Middle:</b> Begin with a number in the middle of
+            the range to maximize your chances of narrowing down the correct
+            number quickly.
+          </li>
+          <li>
+            <b>Use Feedback Wisely:</b> If the game says your guess is far off,
+            adjust your next guess significantly.
+          </li>
+        </ul>
+        <hr />
+        <p id="title"><b>Good Luck! 🍀</b></p>
+        <p>
+          Are you ready to become the ultimate number guesser? Enter the game
+          now and start playing!
+        </p>
+        <button type="button" onclick="next()">Start Game</button>
+      </div>
+    </div>
+    <script>
+      function next() {
+        window.location.href = "game.html";
+      }
+    </script>
+  </body>
+</html>

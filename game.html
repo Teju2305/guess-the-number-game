@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="webpage icon" href="images/icon.png" type="icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <div class="logoleft">
+        <img src="images/logo.png" alt="Guess the Number" />
+      </div>
+      <div class="right">
+        <h1>Between 1 to 100</h1>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Enter your guess number"
+        /><br />
+        <button id="btn" onclick="check()" type="submit">Guess</button>
+        <button id="reset" onclick="reset()" type="submit">Reset</button>
+        <h3 id="hint"></h3>
+
+        <p id="remaining"></p>
+        <hr />
+        <div class="rules">
+          <h3>🎯 Guess the Number: Quick Rules 🎯</h3>
+          <ol>
+            <li><b>Objective:</b> Guess the number between 1 and 100.</li>
+            <li>
+              <b>Chances:</b> You have 5 attempts to find the right number.
+            </li>
+            <li><b>How to Play:</b> Enter your guess and click “Check”.</li>
+            <li>
+              <b>Hints:</b>
+              <ul>
+                <li>Way off 😣 — Very far.</li>
+                <li>Still far 😐 — Getting closer.</li>
+                <li>Getting closer 😊 — Almost there!</li>
+                <li>Perfect Answer 🎉 — You got it!</li>
+              </ul>
+            </li>
+            <li><b>Out of Attempts? </b>The correct number will be shown.</li>
+            <li><b>Reset:</b> Click “Reset” to start over.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
